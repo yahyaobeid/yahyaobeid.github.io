@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio for Yahya Obeid: projects, experience, and ways to connect." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Yahya Obeid • Portfolio</title>
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <nav class="nav">
+        <a class="logo" href="#top">YO</a>
+        <div class="nav-links">
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#about">About</a>
+          <button class="btn" onclick="copyEmail(this)">Let's talk</button>
+        </div>
+      </nav>
+      <div class="hero-content">
+        <p class="eyebrow">AI Agent Builder • Software Engineer • Independent Creator</p>
+        <h1>Building intelligent agents and shipping products that think for themselves.</h1>
+        <p class="lede">
+          I design and develop AI agents that solve real problems—from autonomous workflows to intelligent assistants. 
+          As an independent builder, I turn ideas into products, combining free-thinking experimentation with production-ready engineering.
+        </p>
+        <div class="cta-row">
+          <a class="btn primary" href="#projects">See my work</a>
+          <a class="btn ghost" href="YahyaObeidResume.pdf" download="YahyaObeidResume.pdf" onclick="downloadResume(event)">Download CV/Resume</a>
+        </div>
+        <div class="social-row">
+          <a href="https://github.com/yahyaobeid" target="_blank" rel="noreferrer noopener">GitHub</a>
+          <span>•</span>
+          <a href="https://www.linkedin.com/in/yahya-obeid-176077197/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Work</p>
+          <h2>Projects that highlight my craft</h2>
+        </div>
+        <div class="grid cards">
+          <article class="card">
+            <div>
+              <p class="eyebrow">2025 • Django, Next.js, Postgres</p>
+              <h3>TripHelix</h3>
+              <p>
+                An AI-powered travel assistant that helps users plan their trips by providing personalized recommendations, itinerary suggestions, and travel tips.
+                It uses the OpenAI API to generate personalized travel plans and recommendations based on the user's preferences and travel history.
+                It also uses AI-Agent workflows to find and return the best deals on flights, hotels, and activities.
+              </p>
+            </div>
+            <div class="card-actions">
+              <a href="https://github.com/yahyaobeid/travelAgent" target="_blank" rel="noreferrer noopener">Source</a>
+              <a href="https://triphelix.com" target="_blank" rel="noreferrer noopener">Live demo</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div>
+              <p class="eyebrow">2025 • Django, HTML/CSS</p>
+              <h3>AuditAIQ</h3>
+              <p>
+                AI Agent platform to assist IT Auditing team within Oracle. 
+                AuditAIQ ingests files related to an audit, runs them against policies stored in a vector store, and returns any violations or findings.
+                Allows team to have a conversation with the LLM to continue an analysis on the findings.
+              </p>
+            </div>
+            <div class="card-actions">
+              <a target="_blank" rel="noreferrer noopener">Private Repo within Oracle</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section alt" id="experience">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2>What I've been up to</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <p class="eyebrow">JUN 2025 — Present</p>
+            <h3>AI Engineer • Oracle</h3>
+            <p>
+              Led the development of AuditAIQ, an AI-driven platform designed to streamline internal audit processes at Oracle. Architected agent workflows to automate the analysis of large volumes of files, reducing investigation times from several weeks to less than a day. Engineered and executed scripts to evaluate servers against predefined audit metrics, enabling rapid identification of compliance findings.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <p class="eyebrow">AUG 2023 — JUN 2025</p>
+            <h3>Full-stack Engineer • PerfAI</h3>
+            <p>
+            Designed and implemented API Privacy, a microservice at PerfAI to safeguard sensitive data within registered APIs. Also contributed to GovernanceAI, integrating compliance automation and robust policy management into PerfAI's platform.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <p class="eyebrow">OCT 2019 — OCT 2021</p>
+            <h3>Software Engineer Intern • Z2Data</h3>
+            <p>
+            During my internship, I created dynamic email templates that were sent out to customers, streamlining the communication process and improving outreach efficiency. Additionally, I built an API to enhance the search functionality on the help page, making it easier for users to find relevant documentation and support resources.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>Building, learning, and keeping pace</h2>
+        </div>
+        <div class="about-grid">
+          <p>
+            I love building my own projects for fun in my free time. It's how I explore new ideas, challenge myself, and put new tech into practice without waiting for an issue that forces it. These side projects help me stay curious and excited about programming.
+          </p>
+          <p>
+            Technology moves fast, and I like holding myself accountable to keep up. I'm always experimenting with emerging tools or frameworks, seeking out what's next and learning as much as I can.
+          </p>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Yahya Obeid. All rights reserved.</p>
+      <div class="social-row">
+        <a href="https://github.com/yahyaobeid" target="_blank" rel="noreferrer noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/yahya-obeid-176077197/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+        <a href="#" onclick="copyEmailFooter(event, this)">Email</a>
+      </div>
+    </footer>
+    <script>
+      const year = document.getElementById("year");
+      if (year) {
+        year.textContent = new Date().getFullYear();
+      }
+
+      function copyEmail(btn) {
+        const email = "yobeid2002@gmail.com";
+        navigator.clipboard.writeText(email).then(() => {
+          const originalText = btn.textContent;
+          btn.textContent = "Email copied!";
+          btn.style.opacity = "0.8";
+          setTimeout(() => {
+            btn.textContent = originalText;
+            btn.style.opacity = "1";
+          }, 2000);
+        }).catch(err => {
+          console.error("Failed to copy email:", err);
+          // Fallback: try using a temporary textarea
+          const textarea = document.createElement("textarea");
+          textarea.value = email;
+          textarea.style.position = "fixed";
+          textarea.style.opacity = "0";
+          document.body.appendChild(textarea);
+          textarea.select();
+          try {
+            document.execCommand("copy");
+            const originalText = btn.textContent;
+            btn.textContent = "Email copied!";
+            setTimeout(() => {
+              btn.textContent = originalText;
+            }, 2000);
+          } catch (err) {
+            alert("Email: " + email);
+          }
+          document.body.removeChild(textarea);
+        });
+      }
+
+      function copyEmailFooter(event, element) {
+        event.preventDefault();
+        const email = "yobeid2002@gmail.com";
+        navigator.clipboard.writeText(email).then(() => {
+          const originalText = element.textContent;
+          element.textContent = "Email copied!";
+          setTimeout(() => {
+            element.textContent = originalText;
+          }, 2000);
+        }).catch(err => {
+          console.error("Failed to copy email:", err);
+          // Fallback: try using a temporary textarea
+          const textarea = document.createElement("textarea");
+          textarea.value = email;
+          textarea.style.position = "fixed";
+          textarea.style.opacity = "0";
+          document.body.appendChild(textarea);
+          textarea.select();
+          try {
+            document.execCommand("copy");
+            const originalText = element.textContent;
+            element.textContent = "Email copied!";
+            setTimeout(() => {
+              element.textContent = originalText;
+            }, 2000);
+          } catch (err) {
+            alert("Email: " + email);
+          }
+          document.body.removeChild(textarea);
+        });
+      }
+
+      function downloadResume(event) {
+        event.preventDefault();
+        const filename = "YahyaObeidResume.pdf";
+        const url = "YahyaObeidResume.pdf";
+        
+        fetch(url)
+          .then(response => response.blob())
+          .then(blob => {
+            const blobUrl = window.URL.createObjectURL(blob);
+            const link = document.createElement("a");
+            link.href = blobUrl;
+            link.download = filename;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            window.URL.revokeObjectURL(blobUrl);
+          })
+          .catch(error => {
+            console.error("Download failed:", error);
+            // Fallback: try direct download
+            const link = document.createElement("a");
+            link.href = url;
+            link.download = filename;
+            link.target = "_blank";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+          });
+      }
+    </script>
+  </body>
+</html>
